@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu" class="menu">
+        <h1>Jogo da Memória</h1>
+        <p>clique no botão para jogar!</p>
+        <button onclick="jogar()">JOGAR</button>
+    </div>
+
+    <div id="jogo" class="jogo" style="display: none;"></div>
+
+    <div id="fim" class="fim" style="display: none;">
+        <h1>Fim de Jogo!</h1>
+        <p>Você fez <span id="pontuacao"></span> pontos!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
