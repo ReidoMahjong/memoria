@@ -13,13 +13,51 @@
         <button onclick="jogar()">JOGAR</button>
     </div>
 
-    <div id="jogo" class="jogo" style="display: none;"></div>
+    <div id="jogo" class="jogo" style="display: none;">
+        <div id="j1" class="j1" style="background-color: grey;">
+            <h1>Jogador 1</h1>
+            <img class="player" src="img/player.png" style="transform: scaleX(-1);">
+            <div class="player_stats">
+                <p id="j1_pv">Vida: 10/10</p>
+                <p id="j1_atq">Ataque: 1</p>
+                <p id="j1_esc">Escudo: 1</p>
+                <p id="j1_arm">Armadura: 0</p>
+                <p id="j1_status"></p>
+            </div>
+            <div class="player_buttons">
+                <button value="0" onclick="atacar(this)">Atacar</button>
+                <button value="0" onclick="defender(this)">Defender</button>
+            </div>
+        </div>
+        <div id="meio" class="meio">
+            <div>
+                <p id="oea" class="oea"></p>
+            </div>
+            <div id="cartas" class="cartas"></div>
+        </div>
+        <div id="j2" class="j2" style="background-color: gray;">
+            <h1>Jogador 2</h1>
+            <img class="player" src="img/player.png">
+            <div class="player_stats">
+                <p id="j2_pv">Vida: 10/10</p>
+                <p id="j2_atq">Ataque: 1</p>
+                <p id="j2_esc">Escudo: 1</p>
+                <p id="j2_arm">Armadura: 0</p>
+                <p id="j2_status"></p>
+            </div>
+            <div class="player_buttons">
+                <button value="1" onclick="atacar(this)">Atacar</button>
+                <button value="1" onclick="defender(this)">Defender</button>
+            </div>
+        </div>
+    </div>
 
     <div id="fim" class="fim" style="display: none;">
         <h1>Fim de Jogo!</h1>
-        <p>Você fez <span id="pontuacao"></span> pontos!</p>
+        <p id="vencedor"></p>
     </div>
 
-    <script src="script.js"></script>
+    <script src="jogo.js"></script>
+    <script src="cartas.js"></script>
 </body>
 </html>

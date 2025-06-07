@@ -16,15 +16,35 @@
 }
 
 .jogo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+}
+
+.j1, .meio, .j2 {
+    flex: 1;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.meio {
+    display: flex; 
+    flex-direction: column; 
+    width: 100%;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+.cartas {
+    overflow: auto;
+    line-height: 0;
 }
 
 .carta {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
+    
 }
 
 .fim {
@@ -33,4 +53,48 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.oea {
+    font-size: 20px;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    margin-bottom: 6%;
+    background-color: grey;
+    border-bottom: solid 3px black;
+}
+
+.player {
+    width: 150px;
+    height: 150px;
+    margin-top: 5%;
+}
+
+.player_stats {
+    margin-top: 40px;
+}
+
+.player_stats p {
+    font-size: 30px;
+    margin: 5%;
+}
+
+.player_buttons {
+    margin-top: 50px;
+}
+
+.player_buttons button {
+    font-size: 40px;
+    border: none;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.player_buttons button:hover {
+    background-color: rgb(165, 165, 165);
+}
+
+.j1 h1, .j2 h1 {
+    margin-top: 20px;
 }
